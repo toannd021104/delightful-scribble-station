@@ -59,14 +59,16 @@ export default {
         },
       },
       fontFamily: {
-        serif: ["Fraunces", "Georgia", "serif"],
+        display: ["Space Grotesk", "system-ui", "sans-serif"],
         sans: ["Inter", "system-ui", "sans-serif"],
+        mono: ["JetBrains Mono", "ui-monospace", "monospace"],
       },
       backgroundImage: {
         "gradient-hero": "var(--gradient-hero)",
+        "gradient-glow": "var(--gradient-glow)",
       },
       boxShadow: {
-        soft: "var(--shadow-soft)",
+        glow: "var(--shadow-glow)",
         card: "var(--shadow-card)",
       },
       transitionTimingFunction: {
