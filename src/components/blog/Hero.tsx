@@ -34,7 +34,7 @@ const Hero = () => {
           <div className="overflow-hidden rounded-lg border border-border bg-card shadow-card">
             <div className="flex items-center gap-1.5 border-b border-border bg-secondary/60 px-4 py-2.5">
               <span className="h-2.5 w-2.5 rounded-full bg-destructive/70" />
-              <span className="h-2.5 w-2.5 rounded-full bg-yellow-500/70" />
+              <span className="h-2.5 w-2.5 rounded-full bg-muted-foreground/60" />
               <span className="h-2.5 w-2.5 rounded-full bg-primary/70" />
               <span className="ml-3 font-mono text-[11px] text-muted-foreground">~/deploy.sh</span>
             </div>

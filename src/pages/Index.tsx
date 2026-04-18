@@ -15,18 +15,18 @@ const Index = () => {
         <section className="container py-20">
           <div className="mb-12 flex items-end justify-between">
             <div>
-              <span className="text-xs font-medium uppercase tracking-[0.2em] text-accent">
-                Latest
+              <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-primary">
+                // latest
               </span>
-              <h2 className="mt-2 font-serif text-3xl font-semibold text-foreground md:text-4xl">
-                Recent essays
+              <h2 className="mt-2 font-display text-3xl font-bold text-foreground md:text-4xl">
+                Recent posts
               </h2>
             </div>
             <a
               href="#"
-              className="hidden text-sm text-muted-foreground transition-smooth hover:text-foreground sm:inline"
+              className="hidden font-mono text-xs text-muted-foreground transition-smooth hover:text-primary sm:inline"
             >
-              View all →
+              cat ./archive →
             </a>
           </div>
 
