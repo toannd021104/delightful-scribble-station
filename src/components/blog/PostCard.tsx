@@ -22,10 +22,8 @@ const PostCard = ({ post }: { post: Post }) => {
         </h3>
         <p className="line-clamp-2 text-sm text-muted-foreground">{post.excerpt}</p>
         <div className="flex flex-wrap items-center gap-x-3 gap-y-1 pt-1 font-mono text-[11px] text-muted-foreground">
-          <span className="text-foreground">{post.author}</span>
-          <span aria-hidden>//</span>
           <span>{post.date}</span>
-          <span aria-hidden>//</span>
+          <span aria-hidden>·</span>
           <span>{post.readTime}</span>
         </div>
       </div>

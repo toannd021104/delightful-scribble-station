@@ -5,10 +5,10 @@ import post4 from "@/assets/post-4.jpg";
 
 export type Post = {
   id: string;
+  slug: string;
   title: string;
   excerpt: string;
   category: string;
-  author: string;
   date: string;
   readTime: string;
   image: string;
@@ -16,48 +16,48 @@ export type Post = {
 
 export const featuredPost: Post = {
   id: "0",
-  title: "Zero-downtime deploys with progressive delivery on Kubernetes",
+  slug: "year-of-shipping-small",
+  title: "A year of shipping small things",
   excerpt:
-    "How we replaced our blue/green pipeline with Argo Rollouts and Flagger — cutting incident MTTR by 60% and shipping 12x more often.",
-  category: "Kubernetes",
-  author: "Priya Raman",
+    "I stopped chasing the big launch and started shipping tiny side projects every week. Here's what changed — in my code, my confidence, and my calendar.",
+  category: "Reflections",
   date: "Apr 14, 2026",
-  readTime: "12 min read",
+  readTime: "8 min read",
   image: post2,
 };
 
 export const posts: Post[] = [
   {
     id: "1",
-    title: "Taming the noisy on-call: a practical SLO playbook",
+    slug: "home-lab-rabbit-hole",
+    title: "Down the home-lab rabbit hole",
     excerpt:
-      "Burn-rate alerts, error budgets and the queries we actually use to keep pages meaningful at 3am.",
-    category: "SRE",
-    author: "Marcus Hale",
+      "What started as a Raspberry Pi running Pi-hole became three mini PCs, a Proxmox cluster, and a much louder closet.",
+    category: "Tinkering",
     date: "Apr 10, 2026",
-    readTime: "9 min read",
+    readTime: "6 min read",
     image: post1,
   },
   {
     id: "2",
-    title: "Our migration from Jenkins to GitHub Actions, by the numbers",
+    slug: "notes-on-deep-work",
+    title: "Notes on deep work, from someone who's bad at it",
     excerpt:
-      "Six months, 1,400 pipelines, and the surprises we hit moving a monorepo CI off self-hosted runners.",
-    category: "CI/CD",
-    author: "Iris Penn",
+      "Two years of failed routines, one that finally stuck, and the small rules that protect my mornings.",
+    category: "Notes",
     date: "Apr 6, 2026",
-    readTime: "7 min read",
+    readTime: "5 min read",
     image: post3,
   },
   {
     id: "3",
-    title: "Terraform at scale: workspaces, drift and the cost of clever",
+    slug: "rewriting-my-blog-again",
+    title: "I rewrote my blog. Again.",
     excerpt:
-      "What we learned managing 80+ AWS accounts with a single Terraform monorepo — and what we'd do differently.",
-    category: "IaC",
-    author: "Theo Marchetti",
+      "The honest reasons (boredom, mostly) and the few things I actually learned moving from Next.js to a tiny custom stack.",
+    category: "Code",
     date: "Mar 28, 2026",
-    readTime: "11 min read",
+    readTime: "7 min read",
     image: post4,
   },
 ];
