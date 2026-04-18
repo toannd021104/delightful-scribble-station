@@ -1,21 +1,22 @@
-import { Search } from "lucide-react";
+import { Search, Terminal } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const nav = ["Essays", "Workflow", "Books", "Travel", "About"];
+const nav = ["Kubernetes", "SRE", "CI/CD", "IaC", "About"];
 
 const Header = () => {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between">
-        <a href="/" className="font-serif text-2xl font-semibold tracking-tight text-foreground">
-          Marginalia
+        <a href="/" className="flex items-center gap-2 font-display text-xl font-bold tracking-tight text-foreground">
+          <Terminal className="h-5 w-5 text-primary" />
+          <span>kernel<span className="text-primary">.</span>log</span>
         </a>
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-7 md:flex">
           {nav.map((item) => (
             <a
               key={item}
               href="#"
-              className="text-sm text-muted-foreground transition-smooth hover:text-foreground"
+              className="font-mono text-xs text-muted-foreground transition-smooth hover:text-primary"
             >
               {item}
             </a>
